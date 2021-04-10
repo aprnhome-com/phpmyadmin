@@ -2,9 +2,9 @@ name: PHP Composer
 
 on:
   push:
-    branches: [ master ]
+    branches: [ phpmyadmin ]
   pull_request:
-    branches: [ master ]
+    branches: [ darkmode ]
 
 jobs:
   build:
@@ -34,4 +34,4 @@ jobs:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     # - name: Run test suite
-    #   run: composer run-script test
+    #   run: composer gh repo clone aprnhome-com/phpmyadmin
