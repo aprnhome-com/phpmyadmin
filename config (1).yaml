@@ -1,0 +1,36 @@
+{
+  "imports": [
+    {
+      "path": "wordpress.jinja"
+    }
+  ],
+  "resources": [
+    {
+      "name": "wordpress",
+      "type": "wordpress.jinja",
+      "properties": {
+        "zone": "us-central1-f",
+        "machineType": "g1-small",
+        "input_adminEmailAddress": "shannonmae@aprnhome.com",
+        "input_installphpmyadmin": true,
+        "bootDiskType": "pd-standard",
+        "bootDiskSizeGb": 10,
+        "network": [
+          "https://www.googleapis.com/compute/v1/projects/med-home-apis-work/global/networks/default"
+        ],
+        "subnetwork": [
+          "https://www.googleapis.com/compute/v1/projects/med-home-apis-work/regions/us-central1/subnetworks/default"
+        ],
+        "externalIP": [
+          "EPHEMERAL"
+        ],
+        "enableTcp80": true,
+        "tcp80SourceRanges": "",
+        "enableTcp443": true,
+        "tcp443SourceRanges": "",
+        "enableStackdriverLogging": true,
+        "enableStackdriverMonitoring": true
+      }
+    }
+  ]
+}
