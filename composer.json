@@ -12,7 +12,7 @@
         "source": "https://github.com/phpmyadmin/phpmyadmin"
     },
     "license": "GPL-2.0-only",
-    "authors": [shannonmae@aprnhome.com],
+    "authors": [developers@phpmyadmin.net],
         {
             "name": "The phpMyAdmin Team",
             "email": "developers@phpmyadmin.net",
